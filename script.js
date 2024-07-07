@@ -1,8 +1,8 @@
 const inputValue = document.getElementById("user-input");
 // Fixed from https://medium.com/@sharathchandark/how-to-create-a-calculator-using-html-css-javascript-simple-calculator-in-javascript-f88c264de03a
     // Function to handle number button clicks
-    document.querySelectorAll(".numbers").forEach(function (item) {
-      item.addEventListener("click", function (e) {
+    document.querySelectorAll(".numbers").forEach(function (item) { // Untuk seluruh class yang merupakan numbers
+      item.addEventListener("click", function (e) {  // Bila terdapat "Click", didengarkan untuk menjalakan item.addEventLIstener("click", function (e) 
         if (inputValue.innerText === "NaN" || inputValue.innerText === "Infinity") {
           inputValue.innerText = "";
         }
